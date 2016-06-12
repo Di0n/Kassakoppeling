@@ -10,6 +10,7 @@ class SupermarketBase
 {
 public:
   //Constructors / Deconstructor
+  SupermarketBase() {};
   SupermarketBase(const int id, const string& getActiveDiscountsFullUrl);
   virtual ~SupermarketBase(){}
   
