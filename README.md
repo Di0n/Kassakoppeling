@@ -1,4 +1,11 @@
 # Kassakoppeling
 Kassakoppeling-systeem C/C++
 
-OS: Linux (32/64)bit
+#Requirements:
+
+Libraries:
+libcURL 7.47.0 or higher
+libjsoncpp 1.7.2 or higher
+
+OS: 
+Linux (32/64)bit
