@@ -2,7 +2,6 @@
 #define __SUPERMARKET_BASE_H__
 
 #include "product.h"
-#include "active_product.h"
 
 #include <vector>
 #include <string>
@@ -11,7 +10,6 @@ class SupermarketBase
 {
 public:
   //Constructors / Deconstructor
-  SupermarketBase();
   SupermarketBase(const int id, const string& getActiveDiscountsFullUrl);
   virtual ~SupermarketBase(){}
   

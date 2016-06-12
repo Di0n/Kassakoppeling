@@ -18,12 +18,6 @@ using std::cout;
 using std::endl;
 
 
-SupermarketBase::SupermarketBase()
-{
-  this->id = 0;
-  this->getActiveDiscountsFullUrl = "http://agptest.gemoro.nl/rest/getactivediscountsfull?";
-}
-
 SupermarketBase::SupermarketBase(const int id, const string& getActiveDiscountsFullUrl)
 {
   this->id = id;
