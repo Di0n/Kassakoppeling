@@ -29,14 +29,13 @@ using std::vector;
 
 
 const int ONESECOND(1000000);
-const string PROGRAMPATH = "/home/pi/KassakoppelingCPP/Build/";
 const string PI_IDPATH = "/home/pi/pi_id";
 
 Supermarket supermarket;
 SerialReader sr;
 vector<Task> tasks;
 
-
+string programPath;
 string nodeUrl;
 string serverLogPath;
 string ftpCredentials;
@@ -53,7 +52,7 @@ void send_logs();
 /* Program Start */
 int main(int argc, char **argv) 
 {
-  if (!initialize()) // If initializing fails don't run the program.
+  if (!initialize(argv[0])) // If initializing fails don't run the program.
   {
     Logger::log_error("Failed to initialize Kassakoppeling!");
     return EXIT_FAILURE; 
@@ -174,7 +173,7 @@ int run()
   return returnCode;
 }
 
-bool initialize() 
+bool initialize(const string& argv0) 
 {
   Logger::log_info("Loading Kassakoppeling...");
   
@@ -197,7 +196,7 @@ bool initialize()
   else 
     return false;
   
-  ConfigFile config(PROGRAMPATH + "config.conf"); 
+  ConfigFile config(programPath + "config.conf"); 
   
   string _cport = config.Value("PI", "Port");
   
@@ -215,6 +214,7 @@ bool initialize()
   ftpCredentials = (string)config.Value("SERVER", "FTPCredentials");
   restCallCredentials = supermarket.restCallCredentials = (string)config.Value("SERVER", "RestCallCredentials");
   
+  programPath = argv0;
 
   if (supermarket.getActiveDiscountsFullUrl[supermarket.getActiveDiscountsFullUrl.size()-1] != '?')
     supermarket.getActiveDiscountsFullUrl += '?';
@@ -373,7 +373,7 @@ void kill_old_proc()
 
 inline void clear_log_files()
 {
-  //system(("cd "+PROGRAMPATH+"Logs && find . -name \"*.csv\" -type f -delete && find . -name \"*.log\" -type f -delete").c_str());
+  //system(("cd "+programPath+"Logs && find . -name \"*.csv\" -type f -delete && find . -name \"*.log\" -type f -delete").c_str());
   
   Logger::LogPath lp;
   
