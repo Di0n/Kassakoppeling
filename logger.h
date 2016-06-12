@@ -1,37 +1,3 @@
-/*
-#ifndef LOGGER_H
-#define LOGGER_H
-
-#include <fstream>
-#include <string>
-
-#include "product.h"
-
-using std::string;
-using std::ofstream;
-
-namespace Logger
-{
-  enum Type { ERROR, INFO };
-  void log(Type logType, const string& text);
-}
-#endif
-
-#ifndef PRODUCT_LOGGER_H
-#define PRODUCT_LOGGER_H
-
-class ProductLogger
-{
-public:
-  ProductLogger();
-  void log(Product product, ActiveProduct activeProduct, const bool match, const double matchPercentage);
-private:
-  ofstream file;
-  bool includeFirstRow;
-  string format_product_info(Product& product, ActiveProduct& activeProduct, const bool match, const double matchPercentage);
-};
-#endif
-*/
 #ifndef __LOGGER_H__
 #define __LOGGER_H__
 
@@ -40,7 +6,7 @@ private:
 
 #include "product.h"
 #include "datetime.h"
-// Slechte log class, vervangen indien nodig
+// Bad log class, remake this or replace this (needs to be thread safe)
 
 using std::string;
 

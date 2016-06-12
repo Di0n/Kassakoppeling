@@ -2,7 +2,6 @@
 #include "utils.h"
 
 #include <fstream>
-//#include <dirent.h>
 #include <vector>
 #include <map>
 #include <iostream>
@@ -98,87 +97,3 @@ bool is_file_empty(const string& path)
    if (stream.tellg() == 0) return true; 
    return false;
 }
-
-
-
-
-/*#include "logger.h"
-#include "datetime.h"
-//#include "utility.h"
-#include "utils.h"
-#include "webclient.h"
-
-#include <iostream>
-#include <sstream>
-#include <cmath>
-
-using std::cout;
-using std::endl;
-
-bool is_file_empty(const string& path);
-
-void Logger::log(Logger::Type logType, const string& text)
-{
-  string path = logType == Type::ERROR ? "/home/pi/KassakoppelingCPP/Logs/ErrorLogs/errors_" + DateTime::today().get_date_string() + ".log" 
-  : "/home/pi/KassakoppelingCPP/Logs/InfoLogs/info_" + DateTime::today().get_date_string() + ".log";
-  
-  cout << text << endl;
-  
-  ofstream file(path.c_str(), ofstream::app);
-  if (file)
-    file << (DateTime::today().to_string() + ": " + text).c_str() << endl;
-  else
-    cout << "Failed to write to file!" << endl;
-}
-
-
-
-
-ProductLogger::ProductLogger()
-{
-  const string path = "/home/pi/KassakoppelingCPP/Logs/ProductLogs/products_" + DateTime::today().get_date_string() + ".csv";
-  file.open(path.c_str(), ofstream::app);
-  includeFirstRow = is_file_empty(path);
-}
-
-void ProductLogger::log(Product product, ActiveProduct activeProduct, const bool match, const double matchPercentage)
-{
-  if (file)
-    file << format_product_info(product, activeProduct, match, matchPercentage).c_str() << endl;
-  else 
-    cout << "Cannot write to log file!" << endl;
-}
-
-string ProductLogger::format_product_info(Product& p, ActiveProduct& ap, const bool match, const double matchPercentage)
-{
-  const string matchPerctStr = Utils::double_to_string(matchPercentage);
-  
-  const string pPrice = Utils::double_to_string(p.get_price());  
-  const string apPrice = Utils::double_to_string(ap.get_price());
-
-  const string matchStr = match ? "MATCH" : "NO MATCH";
-  
-  const string activeProductName = (ap.get_system_name() == "[]" || ap.get_system_name().empty()) ? ap.get_name() : ap.get_system_name();
-  
-  DateTime dt = DateTime::today();
-  const string date = dt.get_date_string();
-  const string time = dt.get_time_string();
-  
-  const string firstRow = "DATE,TIME,MATCH,MATCH PERCENTAGE,RECEIPT PRODUCTNAME,ACTIVE PRODUCTNAME,RECEIPT PRODUCTPRICE,ACTIVE PRODUCT PRICE\n";
-  const string format = date+','+time+','+matchStr+','+matchPerctStr+','+p.get_name()+','+activeProductName+','+pPrice+','+apPrice;
-  
-  if (includeFirstRow)
-  {
-    includeFirstRow = false;
-    return firstRow + format;
-  }
-  return format;
-}
-
-bool is_file_empty(const string& path)
-{
-   std::ifstream stream(path.c_str(), std::ios::ate); 
-   if (!stream) return false;
-   if (stream.tellg() == 0) return true; 
-   return false;
-}*/
