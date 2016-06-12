@@ -177,6 +177,8 @@ bool initialize(const string& argv0)
 {
   Logger::log_info("Loading Kassakoppeling...");
   
+  programPath = argv0;
+
   CURLcode res;
   res = curl_global_init(CURL_GLOBAL_ALL);
   
@@ -193,9 +195,12 @@ bool initialize(const string& argv0)
   {
     std::getline(file, pI_ID);
   }
-  else 
-    return false;
-  
+  else
+  {
+	  Logger::log_error("Failed to get the PI_ID from: " + PI_IDPATH + "\nError in file: 'main.cpp'");
+	  return false;
+  }
+
   ConfigFile config(programPath + "config.conf"); 
   
   string _cport = config.Value("PI", "Port");
@@ -214,7 +219,6 @@ bool initialize(const string& argv0)
   ftpCredentials = (string)config.Value("SERVER", "FTPCredentials");
   restCallCredentials = supermarket.restCallCredentials = (string)config.Value("SERVER", "RestCallCredentials");
   
-  programPath = argv0;
 
   if (supermarket.getActiveDiscountsFullUrl[supermarket.getActiveDiscountsFullUrl.size()-1] != '?')
     supermarket.getActiveDiscountsFullUrl += '?';
