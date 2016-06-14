@@ -18,10 +18,11 @@ using std::cout;
 using std::endl;
 
 
-SupermarketBase::SupermarketBase(const int id, const string& getActiveDiscountsFullUrl)
+SupermarketBase::SupermarketBase(const int id, const string& getActiveDiscountsFullUrl, const string& restCallCredentials)
 {
   this->id = id;
   this->getActiveDiscountsFullUrl = getActiveDiscountsFullUrl;
+  this->restCallCredentials = restCallCredentials;
 }
 
 int SupermarketBase::check_for_active_discounts()
