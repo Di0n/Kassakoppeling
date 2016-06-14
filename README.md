@@ -1,7 +1,7 @@
 # Kassakoppeling
 Kassakoppeling-system C/C++
 
-<h2>Requirements</h2>
+<h2>Prerequisites</h2>
 
 <h3>Libraries</h3>
 <li>libcURL 7.47.0 or higher</li>
