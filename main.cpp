@@ -43,7 +43,7 @@ string restCallCredentials;
 
 // Declare functions
 int run();
-bool initialize();
+bool initialize(const string& argv0);
 void kill_old_proc();
 void clear_log_files();
 void send_logs();
