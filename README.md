@@ -20,7 +20,7 @@ You can either compile this program with GCC-4.9 & G++-4.9 or with MAKE.
 <li>-std=c++11, -pthread, -lcurl</li>
 
 <h3>MAKE Instructions</h3>
-make -f <name>
+make -f 'makefile_name'
 
 
 
