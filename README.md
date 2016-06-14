@@ -9,4 +9,7 @@ Kassakoppeling-systeem C/C++
 
 <h2>OS</h2> 
 <li>Linux (32/64)bit</li>
+<li>The user needs to be a member of the group "dialout" to get access to the serial ports</li>
 
+<h2>Other</h2>
+Do not compile with windows tools
