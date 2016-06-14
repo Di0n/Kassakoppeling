@@ -11,5 +11,17 @@ Kassakoppeling-systeem C/C++
 <li>Linux (32/64)bit</li>
 <li>The user needs to be a member of the group "dialout" to get access to the serial ports</li>
 
-<h2>Other</h2>
+<h2>Compiling</h2>
 Do not compile with windows tools
+
+You can either compile this program with GCC-4.9 & G++-4.9 or with MAKE.
+
+<h3>Gcc/G++ Instructions</h3>
+<b>Compile with the following tags</b>
+<li>-std=c++11, -pthread, -lcurl</li>
+
+<h3>MAKE Instructions</h3>
+make -f <name>
+
+
+
