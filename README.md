@@ -4,8 +4,8 @@ Kassakoppeling-system C/C++
 <h2>Prerequisites</h2>
 
 <h3>Libraries</h3>
-<li>libcURL 7.47.0 or higher</li>
-<li>libjsoncpp-dev 1.7.2 or higher</li>
+<li><a href="https://curl.haxx.se/download.html">libcURL</a> 7.47.0 or higher</li>
+<li><a href="https://packages.debian.org/search?keywords=libjsoncpp-dev">libjsoncpp-dev 1.7.2</a> or higher</li>
 
 <h3>OS</h3> 
 <li>Linux (32/64)bit</li>
