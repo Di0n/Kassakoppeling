@@ -29,7 +29,7 @@ using std::vector;
 
 
 const int ONESECOND(1000000);
-const string PI_IDPATH = "/home/pi/pi_id";
+const string PIIDPATH = "/home/pi/pi_id";
 
 Supermarket supermarket;
 SerialReader sr;
@@ -177,7 +177,7 @@ bool initialize(const string& argv0)
 {
   Logger::log_info("Loading Kassakoppeling...");
   
-  programPath = argv0;
+  programPath = argv0 + '/';
 
   CURLcode res;
   res = curl_global_init(CURL_GLOBAL_ALL);
