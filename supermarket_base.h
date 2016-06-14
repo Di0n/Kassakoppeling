@@ -11,7 +11,7 @@ class SupermarketBase
 public:
   //Constructors / Deconstructor
   SupermarketBase() {};
-  SupermarketBase(const int id, const string& getActiveDiscountsFullUrl);
+  SupermarketBase(const int id, const string& getActiveDiscountsFullUrl, const string& restCallCredentials);
   virtual ~SupermarketBase(){}
   
   //Gets the active products from the supermarket
