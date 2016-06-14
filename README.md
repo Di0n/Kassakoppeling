@@ -17,7 +17,7 @@ You can either compile this program with GCC-4.9 & G++-4.9 or with MAKE.
 
 <h3>Gcc/G++ Instructions</h3>
 <b>Compile with the following flags</b>
-<br>-std=c++11, -pthread, -lcurl
+<br>-std=c++11, -Wall, -pthread, -lcurl, 
 
 <h3>MAKE Instructions</h3>
 make -f 'makefile_name'
