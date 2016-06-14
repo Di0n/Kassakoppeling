@@ -12,9 +12,8 @@ Kassakoppeling-systeem C/C++
 <li>The user needs to be a member of the group "dialout" to get access to the serial ports</li>
 
 <h2>Compiling</h2>
-Do not compile with windows tools
-
 You can either compile this program with GCC-4.9 & G++-4.9 or with MAKE.
+Do not compile with windows tools.
 
 <h3>Gcc/G++ Instructions</h3>
 <b>Compile with the following tags</b>
