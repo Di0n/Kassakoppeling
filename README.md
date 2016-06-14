@@ -1,5 +1,5 @@
 # Kassakoppeling
-Kassakoppeling-systeem C/C++
+Kassakoppeling-system C/C++
 
 <h2>Requirements</h2>
 
