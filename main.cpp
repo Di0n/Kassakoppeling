@@ -35,11 +35,12 @@ Supermarket supermarket;
 SerialReader sr;
 vector<Task> tasks;
 
-string programPath;
+
 string nodeUrl;
 string serverLogPath;
 string ftpCredentials;
 string restCallCredentials;
+string programPath;
 
 // Declare functions
 int run();
@@ -178,7 +179,7 @@ bool initialize(const string& argv0)
   Logger::log_info("Loading Kassakoppeling...");
   
   programPath = argv0 + '/';
-
+  
   CURLcode res;
   res = curl_global_init(CURL_GLOBAL_ALL);
   
@@ -190,17 +191,14 @@ bool initialize(const string& argv0)
   
   string pI_ID;
   
-  std::ifstream file(PI_IDPATH.c_str());
+  std::ifstream file(PIIDPATH.c_str());
   if (file)
   {
     std::getline(file, pI_ID);
   }
-  else
-  {
-	  Logger::log_error("Failed to get the PI_ID from: " + PI_IDPATH + "\nError in file: 'main.cpp'");
-	  return false;
-  }
-
+  else 
+    return false;
+  
   ConfigFile config(programPath + "config.conf"); 
   
   string _cport = config.Value("PI", "Port");
@@ -377,7 +375,7 @@ void kill_old_proc()
 
 inline void clear_log_files()
 {
-  //system(("cd "+programPath+"Logs && find . -name \"*.csv\" -type f -delete && find . -name \"*.log\" -type f -delete").c_str());
+  //system(("cd "+PROGRAMPATH+"Logs && find . -name \"*.csv\" -type f -delete && find . -name \"*.log\" -type f -delete").c_str());
   
   Logger::LogPath lp;
   
