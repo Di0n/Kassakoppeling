@@ -18,6 +18,7 @@ using std::cout;
 using std::endl;
 
 
+
 SupermarketBase::SupermarketBase(const int id, const string& getActiveDiscountsFullUrl, const string& restCallCredentials)
 {
   this->id = id;
