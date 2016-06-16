@@ -16,7 +16,7 @@ Kassakoppeling C/C++
 </ul>
 
 <h2>Compiling</h2>
-You can either compile this program with GCC-4.9 & G++-4.9 or with MAKE.
+You can either compile this program with gcc-4.9 & g++-4.9 or with MAKE.
 <br>Do not compile with windows tools.
 
 <h3>GCC/G++ Instructions</h3>
