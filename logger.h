@@ -6,7 +6,7 @@
 
 #include "product.h"
 #include "datetime.h"
-// Bad log class, remake this or replace this (needs to be thread safe)
+// TODO This log class should be redone
 
 using std::string;
 

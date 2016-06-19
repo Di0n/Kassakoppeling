@@ -3,12 +3,6 @@
 
 CMakeFiles/kassakoppeling.dir/rs232.c.o: ../rs232.c
 
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o: ../active_product.cpp
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o: ../datetime.h
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o: ../http.h
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o: ../logger.h
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o: ../product.h
-
 CMakeFiles/kassakoppeling.dir/config_file.cpp.o: ../config_file.cpp
 CMakeFiles/kassakoppeling.dir/config_file.cpp.o: ../config_file.h
 
@@ -18,19 +12,12 @@ CMakeFiles/kassakoppeling.dir/datetime.cpp.o: ../datetime.h
 CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o: ../errorhandler.cpp
 CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o: ../errorhandler.h
 
-CMakeFiles/kassakoppeling.dir/http.cpp.o: ../datetime.h
-CMakeFiles/kassakoppeling.dir/http.cpp.o: ../http.cpp
-CMakeFiles/kassakoppeling.dir/http.cpp.o: ../logger.h
-CMakeFiles/kassakoppeling.dir/http.cpp.o: ../product.h
-
 CMakeFiles/kassakoppeling.dir/logger.cpp.o: ../datetime.h
 CMakeFiles/kassakoppeling.dir/logger.cpp.o: ../logger.cpp
 CMakeFiles/kassakoppeling.dir/logger.cpp.o: ../logger.h
 CMakeFiles/kassakoppeling.dir/logger.cpp.o: ../product.h
 CMakeFiles/kassakoppeling.dir/logger.cpp.o: ../utils.h
-CMakeFiles/kassakoppeling.dir/logger.cpp.o: ../webclient.h
 
-CMakeFiles/kassakoppeling.dir/main.cpp.o: ../active_product.h
 CMakeFiles/kassakoppeling.dir/main.cpp.o: ../config_file.h
 CMakeFiles/kassakoppeling.dir/main.cpp.o: ../datetime.h
 CMakeFiles/kassakoppeling.dir/main.cpp.o: ../errorhandler.h
@@ -57,7 +44,6 @@ CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o: ../rs232.h
 CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o: ../serial_reader.cpp
 CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o: ../serial_reader.h
 
-CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: ../active_product.h
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: ../datetime.h
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: ../logger.h
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: ../product.h
@@ -66,7 +52,6 @@ CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: ../supermarket.h
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: ../supermarket_base.h
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: ../utils.h
 
-CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o: ../active_product.h
 CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o: ../config_file.h
 CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o: ../datetime.h
 CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o: ../logger.h
@@ -79,8 +64,6 @@ CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o: ../webclient.h
 CMakeFiles/kassakoppeling.dir/task.cpp.o: ../datetime.h
 CMakeFiles/kassakoppeling.dir/task.cpp.o: ../task.cpp
 CMakeFiles/kassakoppeling.dir/task.cpp.o: ../task.h
-
-CMakeFiles/kassakoppeling.dir/utility.cpp.o: ../utility.cpp
 
 CMakeFiles/kassakoppeling.dir/utils.cpp.o: ../utils.cpp
 CMakeFiles/kassakoppeling.dir/utils.cpp.o: ../utils.h

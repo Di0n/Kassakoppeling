@@ -164,32 +164,9 @@ CMakeFiles/kassakoppeling.dir/logger.cpp.o.provides: CMakeFiles/kassakoppeling.d
 
 CMakeFiles/kassakoppeling.dir/logger.cpp.o.provides.build: CMakeFiles/kassakoppeling.dir/logger.cpp.o
 
-CMakeFiles/kassakoppeling.dir/http.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
-CMakeFiles/kassakoppeling.dir/http.cpp.o: ../http.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/http.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/http.cpp.o -c /home/gemorostage/projects/Kassakoppeling/http.cpp
-
-CMakeFiles/kassakoppeling.dir/http.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kassakoppeling.dir/http.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/gemorostage/projects/Kassakoppeling/http.cpp > CMakeFiles/kassakoppeling.dir/http.cpp.i
-
-CMakeFiles/kassakoppeling.dir/http.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kassakoppeling.dir/http.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/gemorostage/projects/Kassakoppeling/http.cpp -o CMakeFiles/kassakoppeling.dir/http.cpp.s
-
-CMakeFiles/kassakoppeling.dir/http.cpp.o.requires:
-.PHONY : CMakeFiles/kassakoppeling.dir/http.cpp.o.requires
-
-CMakeFiles/kassakoppeling.dir/http.cpp.o.provides: CMakeFiles/kassakoppeling.dir/http.cpp.o.requires
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/http.cpp.o.provides.build
-.PHONY : CMakeFiles/kassakoppeling.dir/http.cpp.o.provides
-
-CMakeFiles/kassakoppeling.dir/http.cpp.o.provides.build: CMakeFiles/kassakoppeling.dir/http.cpp.o
-
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o: ../supermarket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/supermarket.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/supermarket.cpp.o -c /home/gemorostage/projects/Kassakoppeling/supermarket.cpp
 
@@ -210,32 +187,9 @@ CMakeFiles/kassakoppeling.dir/supermarket.cpp.o.provides: CMakeFiles/kassakoppel
 
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o.provides.build: CMakeFiles/kassakoppeling.dir/supermarket.cpp.o
 
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o: ../active_product.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/active_product.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/active_product.cpp.o -c /home/gemorostage/projects/Kassakoppeling/active_product.cpp
-
-CMakeFiles/kassakoppeling.dir/active_product.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kassakoppeling.dir/active_product.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/gemorostage/projects/Kassakoppeling/active_product.cpp > CMakeFiles/kassakoppeling.dir/active_product.cpp.i
-
-CMakeFiles/kassakoppeling.dir/active_product.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kassakoppeling.dir/active_product.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/gemorostage/projects/Kassakoppeling/active_product.cpp -o CMakeFiles/kassakoppeling.dir/active_product.cpp.s
-
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o.requires:
-.PHONY : CMakeFiles/kassakoppeling.dir/active_product.cpp.o.requires
-
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o.provides: CMakeFiles/kassakoppeling.dir/active_product.cpp.o.requires
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/active_product.cpp.o.provides.build
-.PHONY : CMakeFiles/kassakoppeling.dir/active_product.cpp.o.provides
-
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o.provides.build: CMakeFiles/kassakoppeling.dir/active_product.cpp.o
-
 CMakeFiles/kassakoppeling.dir/product.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
 CMakeFiles/kassakoppeling.dir/product.cpp.o: ../product.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/product.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/product.cpp.o -c /home/gemorostage/projects/Kassakoppeling/product.cpp
 
@@ -258,7 +212,7 @@ CMakeFiles/kassakoppeling.dir/product.cpp.o.provides.build: CMakeFiles/kassakopp
 
 CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
 CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o: ../errorhandler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o -c /home/gemorostage/projects/Kassakoppeling/errorhandler.cpp
 
@@ -281,7 +235,7 @@ CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o.provides.build: CMakeFiles/kass
 
 CMakeFiles/kassakoppeling.dir/config_file.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
 CMakeFiles/kassakoppeling.dir/config_file.cpp.o: ../config_file.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/config_file.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/config_file.cpp.o -c /home/gemorostage/projects/Kassakoppeling/config_file.cpp
 
@@ -304,7 +258,7 @@ CMakeFiles/kassakoppeling.dir/config_file.cpp.o.provides.build: CMakeFiles/kassa
 
 CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
 CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o: ../supermarket_base.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o -c /home/gemorostage/projects/Kassakoppeling/supermarket_base.cpp
 
@@ -325,32 +279,9 @@ CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o.provides: CMakeFiles/kassak
 
 CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o.provides.build: CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o
 
-CMakeFiles/kassakoppeling.dir/utility.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
-CMakeFiles/kassakoppeling.dir/utility.cpp.o: ../utility.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/utility.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/utility.cpp.o -c /home/gemorostage/projects/Kassakoppeling/utility.cpp
-
-CMakeFiles/kassakoppeling.dir/utility.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kassakoppeling.dir/utility.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/gemorostage/projects/Kassakoppeling/utility.cpp > CMakeFiles/kassakoppeling.dir/utility.cpp.i
-
-CMakeFiles/kassakoppeling.dir/utility.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kassakoppeling.dir/utility.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/gemorostage/projects/Kassakoppeling/utility.cpp -o CMakeFiles/kassakoppeling.dir/utility.cpp.s
-
-CMakeFiles/kassakoppeling.dir/utility.cpp.o.requires:
-.PHONY : CMakeFiles/kassakoppeling.dir/utility.cpp.o.requires
-
-CMakeFiles/kassakoppeling.dir/utility.cpp.o.provides: CMakeFiles/kassakoppeling.dir/utility.cpp.o.requires
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/utility.cpp.o.provides.build
-.PHONY : CMakeFiles/kassakoppeling.dir/utility.cpp.o.provides
-
-CMakeFiles/kassakoppeling.dir/utility.cpp.o.provides.build: CMakeFiles/kassakoppeling.dir/utility.cpp.o
-
 CMakeFiles/kassakoppeling.dir/rs232.c.o: CMakeFiles/kassakoppeling.dir/flags.make
 CMakeFiles/kassakoppeling.dir/rs232.c.o: ../rs232.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/kassakoppeling.dir/rs232.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/kassakoppeling.dir/rs232.c.o   -c /home/gemorostage/projects/Kassakoppeling/rs232.c
 
@@ -373,7 +304,7 @@ CMakeFiles/kassakoppeling.dir/rs232.c.o.provides.build: CMakeFiles/kassakoppelin
 
 CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
 CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o: ../serial_reader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o -c /home/gemorostage/projects/Kassakoppeling/serial_reader.cpp
 
@@ -396,7 +327,7 @@ CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o.provides.build: CMakeFiles/kas
 
 CMakeFiles/kassakoppeling.dir/main.cpp.o: CMakeFiles/kassakoppeling.dir/flags.make
 CMakeFiles/kassakoppeling.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/gemorostage/projects/Kassakoppeling/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/kassakoppeling.dir/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kassakoppeling.dir/main.cpp.o -c /home/gemorostage/projects/Kassakoppeling/main.cpp
 
@@ -424,14 +355,11 @@ kassakoppeling_OBJECTS = \
 "CMakeFiles/kassakoppeling.dir/task.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/datetime.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/logger.cpp.o" \
-"CMakeFiles/kassakoppeling.dir/http.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/supermarket.cpp.o" \
-"CMakeFiles/kassakoppeling.dir/active_product.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/product.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/config_file.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o" \
-"CMakeFiles/kassakoppeling.dir/utility.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/rs232.c.o" \
 "CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o" \
 "CMakeFiles/kassakoppeling.dir/main.cpp.o"
@@ -444,14 +372,11 @@ kassakoppeling: CMakeFiles/kassakoppeling.dir/utils.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/task.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/datetime.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/logger.cpp.o
-kassakoppeling: CMakeFiles/kassakoppeling.dir/http.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/supermarket.cpp.o
-kassakoppeling: CMakeFiles/kassakoppeling.dir/active_product.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/product.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/config_file.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o
-kassakoppeling: CMakeFiles/kassakoppeling.dir/utility.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/rs232.c.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o
 kassakoppeling: CMakeFiles/kassakoppeling.dir/main.cpp.o
@@ -469,14 +394,11 @@ CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/utils.cpp.
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/task.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/datetime.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/logger.cpp.o.requires
-CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/http.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/supermarket.cpp.o.requires
-CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/active_product.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/product.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/config_file.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o.requires
-CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/utility.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/rs232.c.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o.requires
 CMakeFiles/kassakoppeling.dir/requires: CMakeFiles/kassakoppeling.dir/main.cpp.o.requires

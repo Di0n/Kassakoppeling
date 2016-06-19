@@ -3,12 +3,6 @@
 
 CMakeFiles/kassakoppeling.dir/rs232.c.o
  /home/gemorostage/projects/Kassakoppeling/rs232.c
-CMakeFiles/kassakoppeling.dir/active_product.cpp.o
- /home/gemorostage/projects/Kassakoppeling/active_product.cpp
- /home/gemorostage/projects/Kassakoppeling/datetime.h
- /home/gemorostage/projects/Kassakoppeling/http.h
- /home/gemorostage/projects/Kassakoppeling/logger.h
- /home/gemorostage/projects/Kassakoppeling/product.h
 CMakeFiles/kassakoppeling.dir/config_file.cpp.o
  /home/gemorostage/projects/Kassakoppeling/config_file.cpp
  /home/gemorostage/projects/Kassakoppeling/config_file.h
@@ -18,20 +12,13 @@ CMakeFiles/kassakoppeling.dir/datetime.cpp.o
 CMakeFiles/kassakoppeling.dir/errorhandler.cpp.o
  /home/gemorostage/projects/Kassakoppeling/errorhandler.cpp
  /home/gemorostage/projects/Kassakoppeling/errorhandler.h
-CMakeFiles/kassakoppeling.dir/http.cpp.o
- /home/gemorostage/projects/Kassakoppeling/datetime.h
- /home/gemorostage/projects/Kassakoppeling/http.cpp
- /home/gemorostage/projects/Kassakoppeling/logger.h
- /home/gemorostage/projects/Kassakoppeling/product.h
 CMakeFiles/kassakoppeling.dir/logger.cpp.o
  /home/gemorostage/projects/Kassakoppeling/datetime.h
  /home/gemorostage/projects/Kassakoppeling/logger.cpp
  /home/gemorostage/projects/Kassakoppeling/logger.h
  /home/gemorostage/projects/Kassakoppeling/product.h
  /home/gemorostage/projects/Kassakoppeling/utils.h
- /home/gemorostage/projects/Kassakoppeling/webclient.h
 CMakeFiles/kassakoppeling.dir/main.cpp.o
- /home/gemorostage/projects/Kassakoppeling/active_product.h
  /home/gemorostage/projects/Kassakoppeling/config_file.h
  /home/gemorostage/projects/Kassakoppeling/datetime.h
  /home/gemorostage/projects/Kassakoppeling/errorhandler.h
@@ -58,7 +45,6 @@ CMakeFiles/kassakoppeling.dir/serial_reader.cpp.o
  /home/gemorostage/projects/Kassakoppeling/serial_reader.cpp
  /home/gemorostage/projects/Kassakoppeling/serial_reader.h
 CMakeFiles/kassakoppeling.dir/supermarket.cpp.o
- /home/gemorostage/projects/Kassakoppeling/active_product.h
  /home/gemorostage/projects/Kassakoppeling/datetime.h
  /home/gemorostage/projects/Kassakoppeling/logger.h
  /home/gemorostage/projects/Kassakoppeling/product.h
@@ -67,7 +53,6 @@ CMakeFiles/kassakoppeling.dir/supermarket.cpp.o
  /home/gemorostage/projects/Kassakoppeling/supermarket_base.h
  /home/gemorostage/projects/Kassakoppeling/utils.h
 CMakeFiles/kassakoppeling.dir/supermarket_base.cpp.o
- /home/gemorostage/projects/Kassakoppeling/active_product.h
  /home/gemorostage/projects/Kassakoppeling/config_file.h
  /home/gemorostage/projects/Kassakoppeling/datetime.h
  /home/gemorostage/projects/Kassakoppeling/logger.h
@@ -80,8 +65,6 @@ CMakeFiles/kassakoppeling.dir/task.cpp.o
  /home/gemorostage/projects/Kassakoppeling/datetime.h
  /home/gemorostage/projects/Kassakoppeling/task.cpp
  /home/gemorostage/projects/Kassakoppeling/task.h
-CMakeFiles/kassakoppeling.dir/utility.cpp.o
- /home/gemorostage/projects/Kassakoppeling/utility.cpp
 CMakeFiles/kassakoppeling.dir/utils.cpp.o
  /home/gemorostage/projects/Kassakoppeling/utils.cpp
  /home/gemorostage/projects/Kassakoppeling/utils.h

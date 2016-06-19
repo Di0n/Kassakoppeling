@@ -11,6 +11,7 @@
 #include <mutex>
 #include <fstream>
 #include <dirent.h>
+#include <limits.h>
 
 #include "serial_reader.h"
 #include "config_file.h"
@@ -29,17 +30,18 @@ using std::vector;
 
 
 const int ONESECOND(1000000);
-const string PI_IDPATH = "/home/pi/pi_id";
+const string PIIDPATH = "/home/pi/pi_id";
 
 Supermarket supermarket;
 SerialReader sr;
 vector<Task> tasks;
 
-string programPath;
+
 string nodeUrl;
 string serverLogPath;
 string ftpCredentials;
 string restCallCredentials;
+string programPath;
 
 // Declare functions
 int run();
@@ -52,7 +54,7 @@ void send_logs();
 /* Program Start */
 int main(int argc, char **argv) 
 {
-  if (!initialize(argv[0])) // If initializing fails don't run the program.
+  if (!initialize()) // If initializing fails don't run the program.
   {
     Logger::log_error("Failed to initialize Kassakoppeling!");
     return EXIT_FAILURE; 
@@ -92,8 +94,6 @@ int run()
     string receipt = Utils::trim_copy(stream); 								// We want to get rid of leading and trailing whitespaces
     Utils::to_upper(receipt);
     
-    cout << receipt << endl;
-    
     if (!supermarket.check_for_discounts(receipt)) continue; 						// check if there are products on the receipt with a discount sign
     
     const int res = supermarket.check_for_active_discounts(); 						// Check for active discounts in the database
@@ -116,13 +116,15 @@ int run()
     
     if (receiptDiscountProducts.empty()) continue; 							// It shouldn't be empty at this point, but check to be sure
     
-    cout << endl;
+    cout << "\nReceipt Products:\n" << endl;
     
     for (auto& p : receiptDiscountProducts)
     {
       cout << p.get_name() << ' ';
       cout << p.get_price() << endl;
     }
+    
+    cout << '\n';
 
     vector<ActiveProduct> activeDiscountProducts;
     
@@ -137,11 +139,6 @@ int run()
     
     cout << endl;
     
-    for (auto& ap : activeDiscountProducts)
-    {
-      cout << ap.get_name() << endl;
-    }
-    
     std::vector<ActiveProduct> matchedActiveProducts = 
     supermarket.get_matched_active_products(receiptDiscountProducts, activeDiscountProducts); 		// Matches the receipt products with the active products and returns successful matches
     
@@ -149,12 +146,6 @@ int run()
     {
       cout << "No products matched each other!" << endl;
       continue;  
-    }
-    
-    for (auto& ap : matchedActiveProducts)
-    {
-      cout << "Name: " << ap.get_name() << endl;
-      cout << "System name: " << ap.get_system_name() << endl;
     }
     
     for (auto& ap : matchedActiveProducts)
@@ -173,12 +164,16 @@ int run()
   return returnCode;
 }
 
-bool initialize(const string& argv0) 
+bool initialize() 
 {
   Logger::log_info("Loading Kassakoppeling...");
   
-  programPath = argv0;
-
+  char result[PATH_MAX];
+  size_t count = readlink("/proc/self/exe", result, PATH_MAX);
+  string temp = string(result, (count > 0) ? count : 0);
+  programPath = temp.substr(0, temp.find_last_of("/\\") + 1);
+  
+  
   CURLcode res;
   res = curl_global_init(CURL_GLOBAL_ALL);
   
@@ -190,17 +185,14 @@ bool initialize(const string& argv0)
   
   string pI_ID;
   
-  std::ifstream file(PI_IDPATH.c_str());
+  std::ifstream file(PIIDPATH.c_str());
   if (file)
   {
     std::getline(file, pI_ID);
   }
-  else
-  {
-	  Logger::log_error("Failed to get the PI_ID from: " + PI_IDPATH + "\nError in file: 'main.cpp'");
-	  return false;
-  }
-
+  else 
+    return false;
+  
   ConfigFile config(programPath + "config.conf"); 
   
   string _cport = config.Value("PI", "Port");
@@ -377,7 +369,7 @@ void kill_old_proc()
 
 inline void clear_log_files()
 {
-  //system(("cd "+programPath+"Logs && find . -name \"*.csv\" -type f -delete && find . -name \"*.log\" -type f -delete").c_str());
+  //system(("cd "+PROGRAMPATH+"Logs && find . -name \"*.csv\" -type f -delete && find . -name \"*.log\" -type f -delete").c_str());
   
   Logger::LogPath lp;
   

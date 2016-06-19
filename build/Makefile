@@ -156,30 +156,6 @@ kassakoppeling/fast:
 	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/build
 .PHONY : kassakoppeling/fast
 
-active_product.o: active_product.cpp.o
-.PHONY : active_product.o
-
-# target to build an object file
-active_product.cpp.o:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/active_product.cpp.o
-.PHONY : active_product.cpp.o
-
-active_product.i: active_product.cpp.i
-.PHONY : active_product.i
-
-# target to preprocess a source file
-active_product.cpp.i:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/active_product.cpp.i
-.PHONY : active_product.cpp.i
-
-active_product.s: active_product.cpp.s
-.PHONY : active_product.s
-
-# target to generate assembly for a file
-active_product.cpp.s:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/active_product.cpp.s
-.PHONY : active_product.cpp.s
-
 config_file.o: config_file.cpp.o
 .PHONY : config_file.o
 
@@ -251,30 +227,6 @@ errorhandler.s: errorhandler.cpp.s
 errorhandler.cpp.s:
 	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/errorhandler.cpp.s
 .PHONY : errorhandler.cpp.s
-
-http.o: http.cpp.o
-.PHONY : http.o
-
-# target to build an object file
-http.cpp.o:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/http.cpp.o
-.PHONY : http.cpp.o
-
-http.i: http.cpp.i
-.PHONY : http.i
-
-# target to preprocess a source file
-http.cpp.i:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/http.cpp.i
-.PHONY : http.cpp.i
-
-http.s: http.cpp.s
-.PHONY : http.s
-
-# target to generate assembly for a file
-http.cpp.s:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/http.cpp.s
-.PHONY : http.cpp.s
 
 logger.o: logger.cpp.o
 .PHONY : logger.o
@@ -468,30 +420,6 @@ task.cpp.s:
 	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/task.cpp.s
 .PHONY : task.cpp.s
 
-utility.o: utility.cpp.o
-.PHONY : utility.o
-
-# target to build an object file
-utility.cpp.o:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/utility.cpp.o
-.PHONY : utility.cpp.o
-
-utility.i: utility.cpp.i
-.PHONY : utility.i
-
-# target to preprocess a source file
-utility.cpp.i:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/utility.cpp.i
-.PHONY : utility.cpp.i
-
-utility.s: utility.cpp.s
-.PHONY : utility.s
-
-# target to generate assembly for a file
-utility.cpp.s:
-	$(MAKE) -f CMakeFiles/kassakoppeling.dir/build.make CMakeFiles/kassakoppeling.dir/utility.cpp.s
-.PHONY : utility.cpp.s
-
 utils.o: utils.cpp.o
 .PHONY : utils.o
 
@@ -553,9 +481,6 @@ help:
 	@echo "... kassakoppeling"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... active_product.o"
-	@echo "... active_product.i"
-	@echo "... active_product.s"
 	@echo "... config_file.o"
 	@echo "... config_file.i"
 	@echo "... config_file.s"
@@ -565,9 +490,6 @@ help:
 	@echo "... errorhandler.o"
 	@echo "... errorhandler.i"
 	@echo "... errorhandler.s"
-	@echo "... http.o"
-	@echo "... http.i"
-	@echo "... http.s"
 	@echo "... logger.o"
 	@echo "... logger.i"
 	@echo "... logger.s"
@@ -592,9 +514,6 @@ help:
 	@echo "... task.o"
 	@echo "... task.i"
 	@echo "... task.s"
-	@echo "... utility.o"
-	@echo "... utility.i"
-	@echo "... utility.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"

@@ -23,11 +23,11 @@ namespace ErrorHandler
   {  
     time_t now = std::time(0);
     double diff = std::difftime(now, lastError);
-    if (nrOfCritErrors >= 1 || nrOfErrors >= 5) // treshold
+    if (nrOfCritErrors >= 1 || nrOfErrors >= 5) 	// treshold
     {
       return true;
     }
-    nrOfErrors = (diff >= 3600) ? 0 : nrOfErrors; // 1 uur
+    nrOfErrors = (diff >= 3600) ? 0 : nrOfErrors;	 // 1 hour
     return false;
   }
 }
