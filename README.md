@@ -6,7 +6,7 @@ Kassakoppeling C/C++
 <h3>Libraries</h3>
 <ul>
 <li><a href="https://curl.haxx.se/download.html">libcURL</a> 7.47.0 or higher</li>
-<li><a href="https://packages.debian.org/search?keywords=libjsoncpp-dev">libjsoncpp-dev 1.7.2</a> or higher</li>
+<li><a href="https://packages.debian.org/search?keywords=libjsoncpp-dev">libjsoncpp-dev</a> 1.7.2 or higher</li>
 </ul>
 
 <h3>OS</h3> 
