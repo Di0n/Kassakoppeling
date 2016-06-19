@@ -45,7 +45,7 @@ string programPath;
 
 // Declare functions
 int run();
-bool initialize(const string& argv0);
+bool initialize();
 void kill_old_proc();
 void clear_log_files();
 void send_logs();
@@ -168,15 +168,11 @@ bool initialize()
 {
   Logger::log_info("Loading Kassakoppeling...");
   
-<<<<<<< HEAD
   char result[PATH_MAX];
   size_t count = readlink("/proc/self/exe", result, PATH_MAX);
   string temp = string(result, (count > 0) ? count : 0);
   programPath = temp.substr(0, temp.find_last_of("/\\") + 1);
   
-=======
-  programPath = argv0 + '/';
->>>>>>> origin/master
   
   CURLcode res;
   res = curl_global_init(CURL_GLOBAL_ALL);
