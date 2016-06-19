@@ -1,5 +1,4 @@
 #include "supermarket.h"
-//#include "utility.h"
 #include "logger.h"
 #include "utils.h"
 #include <stdlib.h>
